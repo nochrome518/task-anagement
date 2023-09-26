@@ -10,8 +10,7 @@ export class GlobalExceptionFilter implements ExceptionFilter {
         const response = ctx.getResponse<Response>();
         const request = ctx.getRequest();
         
-        console.log('exception occured');
-        console.log(exception);
+        console.log('Exception ::',exception);
         
         switch(exception.status) {
             case 400:
